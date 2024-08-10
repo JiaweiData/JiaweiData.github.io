@@ -1,0 +1,82 @@
+site_name: Jiawei
+site_description: personal blog
+site_url: https://jiaweidata.github.io/
+
+repo_url: https://github.com/JiaweiData/jiaweidata.github.io
+# repo_name: squidfunk/mkdocs-material
+edit_uri: edit/docs/docs/
+
+theme:
+  name: material
+  language: zh
+  palette:
+    scheme: slate
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - content.action.view
+    - content.action.edit
+    - navigation.indexes
+    - content.tooltips
+
+plugins:
+  - blog:
+      blog_dir: .
+      blog_toc: true
+      draft: true
+      post_excerpt: required
+  - search:
+      lang:
+        - zh
+        - en
+      pipeline:
+        - stemmer
+        - stopWordFilter
+        - trimmer
+  - tags
+
+nav:
+  - 博客:
+    - index.md
+  # - 关于我: about.md
+
+extra_css:
+  - css/neoteroi-mkdocs.css
+# 监视术语添加
+
+
+markdown_extensions:
+  - abbr
+  # 图标
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # 表格
+  - tables
+  # 时间线
+  - neoteroi.timeline
+  # 任务列表
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  # 代码高亮
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - md_in_html
+
+  # 脚注
+  - footnotes
+watch:
+  - includes
