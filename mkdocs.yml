@@ -23,8 +23,8 @@ plugins:
   - blog:
       blog_dir: .
       blog_toc: true
-      draft: true
-      draft_on_serve: false
+      # draft: true
+      # draft_on_serve: false
       post_excerpt: required
   - search:
       lang:
@@ -81,3 +81,8 @@ markdown_extensions:
   - footnotes
 watch:
   - includes
+
+draft_docs: |
+  drafts/               # A "drafts" directory anywhere.
+  _unpublished.md       # A md file ending in _unpublished.md
+  !/foo_unpublished.md  # But keep this particular file.
