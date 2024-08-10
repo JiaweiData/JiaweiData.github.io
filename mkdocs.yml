@@ -24,6 +24,7 @@ plugins:
       blog_dir: .
       blog_toc: true
       draft: true
+      draft_on_serve: false
       post_excerpt: required
   - search:
       lang:
