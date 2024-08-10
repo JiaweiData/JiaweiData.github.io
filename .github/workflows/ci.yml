@@ -8,6 +8,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: startsWith(github.event.head_commit.message, 'feat:') || startsWith(github.event.head_commit.message, 'fix:')
     steps:
       - uses: actions/checkout@v4
         with:
@@ -19,4 +20,5 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --remote-branch main --force
+      - run: mkdocs build
+      - run: mkdocs gh-deploy --remote-branch main
