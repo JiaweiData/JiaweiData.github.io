@@ -39,7 +39,7 @@ plugins:
 nav:
   - 博客:
     - index.md
-  # - 关于我: about.md
+  - 关于我: about.md
 
 extra_css:
   - css/neoteroi-mkdocs.css

@@ -8,5 +8,6 @@
 - [x] dbt
 - [x] airflow
 - [ ] dbt airflow 集成
+- [x] 个人简介
 
 ## 最近发布的文章
