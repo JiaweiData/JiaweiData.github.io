@@ -546,15 +546,47 @@
         <h1 id="jiaweis-blog">Jiawei's Blog</h1>
 <h2 id="_1">计划</h2>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 数据可视化<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> pandas</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 支持 pandas 的开源库</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 数据可视化</p>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="https://streamlit.io/">Streamlit</a></p>
+<p>在几分钟内将数据脚本转变为可共享的 Web 应用程序。 全部采用纯Python。无需前端经验。</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Finebi</p>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Superset</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Matabase</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 腾讯云BI</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="https://www.trymito.io/">Mito</a></p>
+<p>编辑电子表格以生成 Python。编码速度提高 4 倍。</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="https://dash.plotly.com/">dash plotly</a></p>
+<p>Dash is the original low-code framework for rapidly building data apps in Python.</p>
+</li>
 </ul>
 </li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> dbt</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> airflow</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> dbt airflow 集成</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 个人简介</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 数据迁移工具</p>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> dbt <em>进行中</em></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 服务托管<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="https://www.aliyun.com/">Aliyun</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="">AWS</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="https://cloud.tencent.com/">腾讯云</a></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <a href="https://azure.microsoft.com/zh-cn/">Azure</a></li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 计算引擎<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> databricks</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Redshift</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Doris</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Emr</li>
+</ul>
+</li>
 </ul>
 <h2 id="_2">最近发布的文章</h2>
       </header>
@@ -594,7 +626,7 @@
   </header>
   <div class="md-post__content md-typeset">
     <h2 id="dbt-v18"><a class="toclink" href="2024/08/14/dbt-v18%E8%B0%83%E7%A0%94%E4%B8%80/">dbt v1.8调研（一）</a></h2>
-<p>上次使用 dbt 还是 0.x 版本。当时就觉得这个框架的思路非常好，可以把软件工程的一些概念代入到数据开发中。但是当时版本还有一些低，有一些我生产在用到的功能还无法实现，如先删后插模式，单元测试等。当时只在生产做了小规模使用，没有全面使用。但是我全面推广了 dbt docs 。用于发布我们的数仓的文档，非常好用。</p>
+<p>上次使用 <a href="https://www.getdbt.com/" target="_blank">dbt</a> 还是 0.x 版本。当时就觉得这个框架的思路非常好，可以把软件工程的一些概念代入到数据开发中。但是当时版本还有一些低，有一些我生产在用到的功能还无法实现，如先删后插模式，单元测试等。当时只在生产做了小规模使用，没有全面使用。但是我全面推广了 dbt docs 。用于发布我们的数仓的文档，非常好用。</p>
 <p>最近看到 dbt 发布了 1.8 大体看了一下文档，发现想要的基本上都有了，准备调研一下，有机会在生产推广。</p>
 
     
