@@ -8,6 +8,7 @@ edit_uri: edit/docs/docs/
 
 theme:
   name: material
+  custom_dir: overrides
   language: zh
   palette:
     scheme: slate

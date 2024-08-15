@@ -10,6 +10,7 @@ tags:
   - dbt
 readtime: 10
 draft: false
+comments: true
 ---
 
 # dbt v1.8调研（一）
