@@ -784,6 +784,16 @@
 </span></code></pre></div>
 高亮的代码是在第2步生成的配置信息</p>
 </li>
+<li>
+<p>如果使用了 github actions 并且使用了 <a href="https://squidfunk.github.io/mkdocs-material/blog/2023/09/22/using-git-sparse-checkout-for-faster-documentation-builds/">git sparse-checkout</a> 记得在 在签出目录中增加目录 overrides</p>
+<div class="language-text highlight"><span class="filename">.github/workflows/ci.yml</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>...
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>      sparse-checkout: |
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>        docs
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>        includes
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="hll">        overrides
+</span></span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>...
+</span></code></pre></div>
+</li>
 </ol>
 
 
