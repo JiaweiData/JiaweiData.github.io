@@ -1,7 +1,7 @@
 ---
 date:
   created: 2024-08-14
-  # updated: 2024-08-11
+  updated: 2024-08-17
 authors:
   - wjw
 categories:
@@ -61,7 +61,7 @@ comments: true
 
 # 后面计划调研内容
 
-- [ ] 一个实验性项目，可以就用 [jaffle shop](https://github.com/dbt-labs/jaffle-shop-generator){target="_blank"} 做数据源
+- [x] 一个[实验性项目](https://github.com/JiaweiData/dbt-learning/tree/1.0.0)，可以就用 [jaffle shop](https://github.com/dbt-labs/jaffle-shop-generator){target="_blank"} 做数据源
 - [ ] unit test
 - [ ] data contract
 - [ ] dbt + airflow
