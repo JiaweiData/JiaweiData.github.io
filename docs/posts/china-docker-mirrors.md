@@ -10,6 +10,7 @@ tags:
   - docker
 readtime: 3
 draft: false
+comments: true
 ---
 
 # 关于目前国内docker镜像加速的问题
