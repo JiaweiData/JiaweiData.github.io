@@ -10,13 +10,11 @@
       
       
       
-        <link rel="canonical" href="https://jiaweidata.github.io/2024/08/23/%E5%85%B3%E4%BA%8E%E7%9B%AE%E5%89%8D%E5%9B%BD%E5%86%85docker%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E7%9A%84%E9%97%AE%E9%A2%98/">
+        <link rel="canonical" href="https://jiaweidata.github.io/2024/08/25/dbt-v18%E8%B0%83%E7%A0%94%E4%BA%8C%E4%B8%BB%E8%A6%81%E6%A6%82%E5%BF%B5/">
       
       
-        <link rel="prev" href="../../14/dbt-v18%E8%B0%83%E7%A0%94%E4%B8%80/">
+        <link rel="prev" href="../../23/%E5%85%B3%E4%BA%8E%E7%9B%AE%E5%89%8D%E5%9B%BD%E5%86%85docker%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F%E7%9A%84%E9%97%AE%E9%A2%98/">
       
-      
-        <link rel="next" href="../../25/dbt-v18%E8%B0%83%E7%A0%94%E4%BA%8C%E4%B8%BB%E8%A6%81%E6%A6%82%E5%BF%B5/">
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
@@ -24,7 +22,7 @@
     
     
       
-        <title>关于目前国内docker镜像加速的问题 - Jiawei</title>
+        <title>dbt v1.8调研（二）主要概念 - Jiawei</title>
       
     
     
@@ -76,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker" class="md-skip">
+        <a href="#dbt-v18" class="md-skip">
           跳转至
         </a>
       
@@ -112,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              关于目前国内docker镜像加速的问题
+              dbt v1.8调研（二）主要概念
             
           </span>
         </div>
@@ -495,6 +493,101 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#models" class="md-nav__link">
+    <span class="md-ellipsis">
+      models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#model-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      model groups
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-contrat" class="md-nav__link">
+    <span class="md-ellipsis">
+      model contrat
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      sources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seeds" class="md-nav__link">
+    <span class="md-ellipsis">
+      seeds
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macros" class="md-nav__link">
+    <span class="md-ellipsis">
+      macros
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#document" class="md-nav__link">
+    <span class="md-ellipsis">
+      document
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exposures" class="md-nav__link">
+    <span class="md-ellipsis">
+      exposures
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lint-pre-commt-version-ci" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他杂项lint pre-commt version ci
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -549,7 +642,7 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5v-5Z"/></svg>
-                        <time datetime="2024-08-23 00:00:00" class="md-ellipsis">2024年8月23日</time>
+                        <time datetime="2024-08-25 00:00:00" class="md-ellipsis">2024年8月25日</time>
                       </div>
                     </li>
                     
@@ -560,7 +653,7 @@
                           <span class="md-ellipsis">
                             分类于
                             
-                              <a href="../../../../category/%E6%9D%82%E9%A1%B9/">杂项</a></span>
+                              <a href="../../../../category/%E5%B7%A5%E5%85%B7/">工具</a></span>
                         </div>
                       </li>
                     
@@ -571,7 +664,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5Z"/></svg>
                           <span class="md-ellipsis">
                             
-                              需要 3 分钟阅读时间
+                              需要 15 分钟阅读时间
                             
                           </span>
                         </div>
@@ -597,14 +690,14 @@
     
     
     
-      <span class="md-tag">docker</span>
+      <span class="md-tag">dbt</span>
     
   
 </nav>
 
 
   
-    <a href="https://github.com/JiaweiData/jiaweidata.github.io/edit/docs/docs/posts/china-docker-mirrors.md" title="编辑此页" class="md-content__button md-icon">
+    <a href="https://github.com/JiaweiData/jiaweidata.github.io/edit/docs/docs/posts/dbt 新版本调研2.md" title="编辑此页" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -613,34 +706,77 @@
     
       
     
-    <a href="https://github.com/JiaweiData/jiaweidata.github.io/raw/docs/docs/posts/china-docker-mirrors.md" title="查看本页的源代码" class="md-content__button md-icon">
+    <a href="https://github.com/JiaweiData/jiaweidata.github.io/raw/docs/docs/posts/dbt 新版本调研2.md" title="查看本页的源代码" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="docker">关于目前国内docker镜像加速的问题</h1>
-<p>之前使用的aliyun加速，最近调整后不让用了。找了半天，终于找到一个可以用的。</p>
-<p>答案是华为云</p>
+<h1 id="dbt-v18">dbt v1.8调研（二）主要概念</h1>
+<p>已经开发了一个<a href="https://github.com/JiaweiData/dbt-learning">实验性的项目</a>，用来验证功能。</p>
+<p>实验的主要特性和功能：</p>
 <!-- more -->
 
+<h2 id="models"><a href="https://docs.getdbt.com/docs/build/models">models</a></h2>
+<p>transformations(转换逻辑)的核心承载者，基于模板语言（jinja）实现的<a href="https://docs.getdbt.com/docs/build/sql-models">sql脚本</a>来描述数据转换的逻辑，对于某些数据引擎，也支持<a href="https://docs.getdbt.com/docs/build/python-models">python models</a> 描述数据逻辑。</p>
+<p>支持在model中引用<a href="https://docs.getdbt.com/docs/build/macros">宏(macro)</a>)来封装通用逻辑或函数。</p>
+<p>除了sql脚本，还需要在model目录中定义<a href="https://docs.getdbt.com/reference/model-properties">anyfilename.yml</a>来描述model的元数据，<a href="https://jiaweidata.github.io/dbt-learning/#!/model/model.dbt_learning.stores">这里</a>有个例子。</p>
+<p>model还支持以下模式和策略。</p>
+<ul>
+<li>全量</li>
+<li>增量 用于数据总量大，增量相对较小的转换场景</li>
+<li><a href="https://docs.getdbt.com/reference/resource-configs/trino-configs#deleteinsert-strategy">delete+insert</a></li>
+<li><a href="https://docs.getdbt.com/reference/resource-configs/trino-configs#merge-strategy">merge</a></li>
+<li><a href="https://docs.getdbt.com/reference/resource-configs/trino-configs#append-strategy">append</a></li>
+<li><strong><a href="https://docs.getdbt.com/docs/build/incremental-strategy#custom-strategies">custom_strategy</a></strong> 自定义策略</li>
+<li>快照 用于计算拉链表，对于缓慢变化维第二种类型的封装<ul>
+<li><a href="https://docs.getdbt.com/reference/resource-configs/strategy#use-the-timestamp-strategy">timestamp</a> 基于增量时间戳字段捕获数据变更</li>
+<li><a href="https://docs.getdbt.com/reference/resource-configs/strategy#use-the-check_cols-strategy">check_cols</a> 基于指定列变化捕获数据变更</li>
+</ul>
+</li>
+</ul>
+<p>官方建议所有model第一次创建都用全量，速度变慢后再考虑改为增量。</p>
+<h3 id="model-groups"><a href="https://docs.getdbt.com/docs/collaborate/govern/model-access#groups">model groups</a></h3>
+<p><a href="https://docs.getdbt.com/docs/build/model-groups">model groups</a> 是对model进行分组，方便管理，比如将多个model放在一个组中，然后统一设置一个配置。</p>
+<p>这里引入软件功能的逻辑代码组织方式。model是对数据计算逻辑进行描述的最小单位，那么group就是一组model，组内的model应该是实现某个或者某累需求的集合，由单独的个人或团队负责，对外有统一输入和输出，类似调用接口或者API。通过后面会提到的contract， 可以严格定义对外输出。再结合model access。就可以完成功能的逻辑代码组织和封装，避免内部(private)逻辑对外暴露，可以完成内部重构。</p>
+<p>所以在1.8版本，支持了package / group / model 三个粒度由大到小的组织形式。 并且可以分别控制model的<a href="https://docs.getdbt.com/docs/collaborate/govern/model-access#access-modifiers">引用权限</a>。</p>
+<h3 id="model-contrat"><a href="https://docs.getdbt.com/docs/collaborate/govern/model-contracts">model contrat</a></h3>
+<p>对于model输出数据结构的强制校验，在运行<code>dbt build</code>时，会校验model的输出数据结构是否与contract一致。</p>
+<p>目前的校验逻辑是，对于一个model contract中定义的输出字段，在model的实际计算结果结构中必须都有，且数据类型也匹配。</p>
+<h2 id="sources"><a href="https://docs.getdbt.com/docs/build/sources">sources</a></h2>
+<p>source与model类似，也是描述数据源的元数据，与model的区别是没有数据转换逻辑，因此没有.sql脚本，只有.yml文件。</p>
+<p>主要作用是精确描述数据转换的数据来源。方便数据血缘管理。</p>
+<h2 id="seeds"><a href="https://docs.getdbt.com/docs/build/seeds">seeds</a></h2>
+<p>seeds是dbt中用于描述数据源的元数据，与source的区别是，seeds适合的是小数据量，不频繁发生变化的，需要进行版本控制的小量数据来源，通常是csv格式。官方给的一个例子是国家名称与编码表，与model的区别是没有数据转换逻辑，因此没有.sql脚本，只有.yml文件。</p>
+<p>注意不要用seed去加载增量数据。</p>
+<!-- ## data_tests 单说 -->
+
+<h2 id="macros"><a href="https://docs.getdbt.com/docs/build/jinja-macros#macros">macros</a></h2>
+<p>macros是dbt中用于封装通用逻辑或函数的模板语言(jinja)脚本，可以定义通用的sql脚本。</p>
+<h2 id="document">document</h2>
+<p>这里是指dbt项目通过运行<code>dbt docs generate</code>可以生成一个静态的dbt项目文档网页，方便团队成员查看。 这里有一个<a href="https://jiaweidata.github.io/dbt-learning/#!/overview">例子</a>。</p>
+<h2 id="exposures">exposures</h2>
+<p>这里是dbt中用于描述计算逻辑的下游需求的抽象。例如一个报表等。</p>
+<p>cloud 中的<a href="https://docs.getdbt.com/blog/dbt-explorer#ok-but-is-it-fresh-is-it-right">data helth</a> 也是基于exposures实现的。</p>
+<!-- ## package -->
+
+<h2 id="lint-pre-commt-version-ci">其他杂项lint pre-commt version ci</h2>
 <ol>
-<li>
-<p>具体使用方式是注册一个华为云账号。</p>
+<li>lint: sqlfluff</li>
+<li><a href="https://github.com/JiaweiData/dbt-learning/blob/main/.sqlfluff">.sqlfluff</a></li>
+<li>pre-commit: pre-commit hook</li>
+<li><a href="https://github.com/JiaweiData/dbt-learning/blob/main/.pre-commit-config.yaml">.pre-commit-config.yaml</a></li>
+<li>约定式提交及版本控制</li>
+<li><a href="https://www.conventionalcommits.org/en/v1.0.0/">conventional commit</a></li>
+<li><a href="https://semver.org/">semver</a></li>
+<li><a href="https://commitizen-tools.github.io/commitizen/">commitizen</a><ul>
+<li><a href="https://github.com/JiaweiData/dbt-learning/blob/main/.cz.toml">.cz.toml</a></li>
+</ul>
 </li>
-<li>
-<p>去控制台搜索 SWR</p>
-</li>
-<li>
-<p>进入容器镜像服务</p>
-</li>
-<li>
-<p>找到左边菜单的"镜像资源" -&gt; "镜像中心"</p>
-</li>
-<li>
-<p>点击右上角的镜像加速器，既可以看到加速器地址以及配置说明，根据配置使用就行了。</p>
-</li>
+<li>自动发布文档，通过<a href="https://github.com/JiaweiData/dbt-learning/blob/main/.github/workflows/ci.yml">github actions</a></li>
+<li>开发环境相关 tox</li>
+<li><a href="https://github.com/JiaweiData/dbt-learning/blob/main/tox.ini">tox.ini</a></li>
 </ol>
 
 
