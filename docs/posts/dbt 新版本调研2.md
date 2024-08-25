@@ -94,14 +94,14 @@ cloud 中的[data helth](https://docs.getdbt.com/blog/dbt-explorer#ok-but-is-it-
 ## 其他杂项lint pre-commt version ci
 
 1. lint: sqlfluff
-   - [.sqlfluff](https://github.com/JiaweiData/dbt-learning/blob/main/.sqlfluff)
+    - [.sqlfluff](https://github.com/JiaweiData/dbt-learning/blob/main/.sqlfluff)
 2. pre-commit: pre-commit hook
-   - [.pre-commit-config.yaml](https://github.com/JiaweiData/dbt-learning/blob/main/.pre-commit-config.yaml)
+    - [.pre-commit-config.yaml](https://github.com/JiaweiData/dbt-learning/blob/main/.pre-commit-config.yaml)
 3. 约定式提交及版本控制
-   - [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/)
-   - [semver](https://semver.org/)
-   - [commitizen](https://commitizen-tools.github.io/commitizen/)
-      - [.cz.toml](https://github.com/JiaweiData/dbt-learning/blob/main/.cz.toml)
+    - [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/)
+    - [semver](https://semver.org/)
+    - [commitizen](https://commitizen-tools.github.io/commitizen/)
+        - [.cz.toml](https://github.com/JiaweiData/dbt-learning/blob/main/.cz.toml)
 4. 自动发布文档，通过[github actions](https://github.com/JiaweiData/dbt-learning/blob/main/.github/workflows/ci.yml)
 5. 开发环境相关 tox
-   - [tox.ini](https://github.com/JiaweiData/dbt-learning/blob/main/tox.ini)
+    - [tox.ini](https://github.com/JiaweiData/dbt-learning/blob/main/tox.ini)
